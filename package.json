@@ -1,0 +1,34 @@
+{
+  "name": "better-assertions",
+  "version": "0.0.1",
+  "description": "Better assertions",
+  "main": "./lib/better.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "~5.8.20",
+    "babel-plugin-object-assign": "~1.2.1",
+    "babel-eslint": "~4.0.5",
+    "mocha": "~2.2.5",
+    "eslint": "~1.0.0",
+    "babel": "~5.8.20"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "test": "./node_modules/.bin/mocha --compilers js:babel/register --reporter min src/**/__tests__/**/*test*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matthewwithanm/better-assertions.js.git"
+  },
+  "keywords": [
+    "testing",
+    "assert",
+    "assertions"
+  ],
+  "author": "Matthew Dapena-Tretter <m@tthewwithanm.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewwithanm/better-assertions.js/issues"
+  }
+}
