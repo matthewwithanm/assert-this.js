@@ -17,7 +17,7 @@
   },
   "scripts": {
     "prepublish": "npm run build",
-    "build": "./node_modules/.bin/babel src --out-dir .",
+    "build": "./node_modules/.bin/babel src/assert-this.js -o ./assert-this.js; ./node_modules/.bin/babel src/assertions.js -o ./assertions.js",
     "test": "./node_modules/.bin/mocha --compilers js:babel/register --reporter min src/**/__tests__/**/*test*.js"
   },
   "repository": {
