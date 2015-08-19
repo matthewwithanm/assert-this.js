@@ -60,7 +60,7 @@ Or just use Assert This! with regular assert-style functions at test time:
 
 ```js
 import assertThis from 'assert-this';
-import {equal as equals} from 'assert';
+import {equal as equals} from 'assert'; // Plain old node assert module!
 import sum from './sum';
 
 sum(1, 2)::asssertThis(equals, 3);
