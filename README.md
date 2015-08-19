@@ -11,11 +11,11 @@ Examples
 --------
 
 ```js
-import {equals, isTrue, isFalse} from 'assert-this/assertions';
+import {is, isTrue, isFalse} from 'assert-this/assertions';
 import sum from './sum';
 import isOdd from './is-odd';
 
-sum(1, 2)::equals(3);
+sum(1, 2)::is(3);
 isOdd(3)::isTrue();
 isOdd(2)::isFalse();
 ```
@@ -30,14 +30,14 @@ Since we're just dealing with functions, you can name them whatever you want:
 
 ```js
 import {
-  equals as betterEqual,
+  is as betterBe,
   isTrue as betterBeTrue,
   isFalse as betterBeFalse,
 } from 'assert-this/assertions';
 import sum from './sum';
 import isOdd from './is-odd';
 
-sum(1, 2)::betterEqual(3);
+sum(1, 2)::betterBe(3);
 isOdd(3)::betterBeTrue();
 isOdd(2)::betterBeFalse();
 ```

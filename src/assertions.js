@@ -9,7 +9,7 @@ const nameMap = {
   isNotOk: 'isFalsy',
   equal: 'equals',
   // notEqual: '?',
-  strictEqual: 'strictEquals',
+  strictEqual: 'is',
   // notStrictEqual: '?',
   deepEqual: 'deepEquals',
   // notDeepEqual: '?',
