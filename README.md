@@ -1,7 +1,7 @@
-better-assertions
-=================
+Assert This!
+============
 
-Better is an experimental assertion library that leverages the proposed
+Assert This! is an experimental assertion library that leverages the proposed
 [function-bind operator] to create a clear left-to-right assertion style that
 doesn't require wrapping (like [expect-style asssertions][expect]) or
 `Object.prototype` changes (like [should-style assertions][should]).
@@ -11,7 +11,7 @@ Examples
 --------
 
 ```js
-import {equals, isTrue, isFalse} from 'better-assertions/assertions';
+import {equals, isTrue, isFalse} from 'assert-this/assertions';
 import sum from './sum';
 import isOdd from './is-odd';
 
@@ -33,7 +33,7 @@ import {
   equals as betterEqual,
   isTrue as betterBeTrue,
   isFalse as betterBeFalse,
-} from 'better-assertions/assertions';
+} from 'assert-this/assertions';
 import sum from './sum';
 import isOdd from './is-odd';
 
@@ -43,11 +43,12 @@ isOdd(2)::betterBeFalse();
 ```
 
 Also, since we're just dealing with functions, there's no need for plugins. To
-create your own better-style assertions, just use `better.partial` with a normal
-assert-style assertion function:
+create your own assert-this-style assertions, just use `assertThis.partial` with
+a normal assert-style assertion function:
 
-```
-const betterBeGreaterThan5 = better.partial((actual, msg) => {
+```js
+import assertThis from 'assert-this';
+const betterBeGreaterThan5 = assertThis.partial((actual, msg) => {
   if (actual <= 5) throw new Error(msg || `${actual}  isn't greater than 5!`);
 });
 
@@ -56,9 +57,8 @@ const betterBeGreaterThan5 = better.partial((actual, msg) => {
 ```
 
 In fact, this is really all the library does! For convenience, common assertions
-are included pre-wrapped in the `'better-assertions/assertions'` module
-(currently, they're wrapping [chai]'s), but you don't have to use them if you
-don't want to.
+are included pre-wrapped in the `'assert-this/assertions'` module (currently,
+they're wrapping [chai]'s), but you don't have to use them if you don't want to.
 
 
 Why?

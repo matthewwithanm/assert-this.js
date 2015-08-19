@@ -1,11 +1,11 @@
-export default function better(assertion, ...args) {
+export default function assertThis(assertion, ...args) {
   assertion(this, ...args);
   return this;
 }
 
-better.partial = function(...args) {
+assertThis.partial = function(...args) {
   const applied = partial(this, ...args);
-  applied.partial = better.partial;
+  applied.partial = assertThis.partial;
   return applied;
 }
 

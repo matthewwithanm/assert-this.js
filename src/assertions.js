@@ -1,6 +1,6 @@
 import {assert} from 'chai';
 import keys from 'object-keys';
-import better from './better';
+import assertThis from './assert-this';
 
 
 const nameMap = {
@@ -76,6 +76,6 @@ const nameMap = {
 
 module.exports = keys(nameMap).reduce((exports, name) => {
   const newName = nameMap[name] || name;
-  exports[newName] = better.partial(assert[name]);
+  exports[newName] = assertThis.partial(assert[name]);
   return exports;
 }, {});

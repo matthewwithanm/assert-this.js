@@ -1,8 +1,8 @@
 {
-  "name": "better-assertions",
+  "name": "assert-this",
   "version": "0.0.1",
-  "description": "Better assertions",
-  "main": "./better.js",
+  "description": "A clear assertion style that uses virtual methods instead of wrappers.",
+  "main": "./assert-this.js",
   "dependencies": {
     "chai": "~3.2.0",
     "object-keys": "~1.0.7"
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/matthewwithanm/better-assertions.js.git"
+    "url": "git://github.com/matthewwithanm/assert-this.js.git"
   },
   "keywords": [
     "testing",
@@ -32,6 +32,6 @@
   "author": "Matthew Dapena-Tretter <m@tthewwithanm.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matthewwithanm/better-assertions.js/issues"
+    "url": "https://github.com/matthewwithanm/assert-this.js/issues"
   }
 }
