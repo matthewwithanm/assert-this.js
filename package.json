@@ -2,8 +2,11 @@
   "name": "better-assertions",
   "version": "0.0.1",
   "description": "Better assertions",
-  "dependencies": {},
   "main": "./better.js",
+  "dependencies": {
+    "chai": "~3.2.0",
+    "object-keys": "~1.0.7"
+  },
   "devDependencies": {
     "babel-core": "~5.8.20",
     "babel-plugin-object-assign": "~1.2.1",
