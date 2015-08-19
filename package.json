@@ -2,8 +2,8 @@
   "name": "better-assertions",
   "version": "0.0.1",
   "description": "Better assertions",
-  "main": "./lib/better.js",
   "dependencies": {},
+  "main": "./better.js",
   "devDependencies": {
     "babel-core": "~5.8.20",
     "babel-plugin-object-assign": "~1.2.1",
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "prepublish": "npm run build",
-    "build": "./node_modules/.bin/babel src --out-dir lib",
+    "build": "./node_modules/.bin/babel src --out-dir .",
     "test": "./node_modules/.bin/mocha --compilers js:babel/register --reporter min src/**/__tests__/**/*test*.js"
   },
   "repository": {

@@ -1,2 +1,4 @@
 /node_modules/
-/lib/
+/better.js
+/assertions.js
+/__tests__/
