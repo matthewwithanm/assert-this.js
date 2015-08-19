@@ -60,4 +60,9 @@ describe('better', () => {
     }, 'Errored!');
   });
 
+  it('chains', () => {
+    const betterEqual = better.partial(assert.equal);
+    assert.equal(0::betterEqual(0), 0);
+  });
+
 });

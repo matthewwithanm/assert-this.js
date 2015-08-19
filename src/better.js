@@ -1,5 +1,6 @@
 export default function better(assertion, ...args) {
   assertion(this, ...args);
+  return this;
 }
 
 better.partial = function(...args) {

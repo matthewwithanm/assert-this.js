@@ -20,6 +20,12 @@ isOdd(3)::isTrue();
 isOdd(2)::isFalse();
 ```
 
+They chain if you want to:
+
+```js
+random(1, 5)::isAbove(1)::isBelow(5);
+```
+
 Since we're just dealing with functions, you can name them whatever you want:
 
 ```js
