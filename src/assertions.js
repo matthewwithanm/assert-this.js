@@ -74,7 +74,7 @@ const nameMap = {
   isNotFrozen: null,
 };
 
-module.exports = keys(nameMap).reduce((exports, name) => {
+export default keys(nameMap).reduce((exports, name) => {
   const newName = nameMap[name] || name;
   exports[newName] = assertThis.partial(assert[name]);
   return exports;
