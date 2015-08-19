@@ -56,6 +56,16 @@ const betterBeGreaterThan5 = assertThis.partial((actual, msg) => {
 2::betterBeGreaterThan5("This number's too small.");
 ```
 
+Or just use Assert This! with regular assert-style functions at test time:
+
+```js
+import assertThis from 'assert-this';
+import {equal as equals} from 'assert';
+import sum from './sum';
+
+sum(1, 2)::asssertThis(equals, 3);
+```
+
 In fact, this is really all the library does! For convenience, common assertions
 are included pre-wrapped in the `'assert-this/assertions'` module (currently,
 they're wrapping [chai]'s), but you don't have to use them if you don't want to.
